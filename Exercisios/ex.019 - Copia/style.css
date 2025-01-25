@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+header, main >selection > p{
+    color: rgb(35, 69, 4);
+}
+header > h1{
+    text-align: center; color: brown; border: solid; border-color: rgb(35, 120, 194);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+main > selection > h1{
+    text-align: center; color: brown; border: solid; border-color: rgb(35, 120, 194);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+.tipos{
+    color: rgb(62, 62, 232);
+}
+footer{
+    color: rgb(134, 51, 212);
+}

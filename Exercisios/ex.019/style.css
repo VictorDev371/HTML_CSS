@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div > p {
+    display: none;
+}
+
+div:hover {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:hover > p {
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+    width: 100px;
+
+}
+
+.div1::after > p{
+    content: 'oi';
+}
+
+.ola09::after{
+    content: '[oi]';
+}
