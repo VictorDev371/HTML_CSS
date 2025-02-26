@@ -1,10 +1,21 @@
 @charset "UTF-8";
 
 
+:root{
+    --fonte1: Verdana, Genava, Tahoma, sans-serif;
+    --fonte2: "Sigmar-regular";
+}
+
+@font-face {
+    font-family: "Sigmar-Regular";
+    src: url(fontes/Sigmar-Regular.ttf) format('truetype');
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 html, body{
     min-height: 100%;
     background-color: darkgray;
@@ -21,9 +32,13 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7.5vw;
 }
 header p{
+    font-size: 2.5vw;
     padding-bottom: 50px;
+    font-family: var(--fonte1);
 }
 a{
     color: white;
@@ -36,23 +51,49 @@ header a:hover, footer a:hover{
 
 
 section{
+    font-family: var(--fonte1);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3.5vw;
 }
+
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
 }
+
 section.imagem{
     background-color: rgba(27, 27, 27, 0.693);
     color: white;
+    box-shadow:  inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 section.imagem > p{
-    width: 400px;
-    background-color: rgba(24, 24, 24, 0.789);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 2px 2px 0px black;
+
 }
+
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+}
+
 
 
 footer{
@@ -60,4 +101,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte1);
 }
